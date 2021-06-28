@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <HBox prefHeight="720.0" prefWidth="404.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="10000.0" prefWidth="118.0" styleClass="dark-gray-background" stylesheets="@../Values/style.css">
+                     <children>
+                        <Pane prefHeight="250.0" prefWidth="80.0" />
+                        <ImageView fitHeight="58.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@img/chat.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="48.0" layoutX="45.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@img/file.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="48.0" layoutX="10.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@img/setting.png" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="220.0" prefWidth="61.0" VBox.vgrow="ALWAYS" />
+                        <ImageView fitHeight="58.0" fitWidth="48.0" layoutX="10.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" right="30.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@img/logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="720.0" prefWidth="452.0" styleClass="gray-background" stylesheets="@../Values/style.css">
+               <children>
+                  <HBox prefHeight="45.0" prefWidth="266.0" stylesheets="@../Values/style.css">
+                     <styleClass>
+                        <String fx:value="dark-gray-background" />
+                        <String fx:value="raduis" />
+                     </styleClass>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/loupe.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="7.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField promptText="Search" stylesheets="@../Values/style.css">
+                           <HBox.margin>
+                              <Insets right="10.0" top="7.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="transparent-background" />
+                              <String fx:value="text-color" />
+                           </styleClass>
+                           <font>
+                              <Font name="Ebrima" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="4.0" prefWidth="326.0" styleClass="dark-gray-background" stylesheets="@../Values/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Pane>
+                  <ScrollPane prefHeight="720.0" prefWidth="326.0" styleClass="transparent-background" stylesheets="@../Values/style.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <content>
+                        <Pane prefHeight="620.0" prefWidth="324.0" styleClass="transparent-background" stylesheets="@../Values/style.css">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" layoutY="8.0" prefHeight="79.0" prefWidth="303.0">
+                                 <children>
+                                    <ImageView fitHeight="104.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                                       <image>
+                                          <Image url="@img/user.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="CENTER" prefHeight="79.0" prefWidth="166.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="99.0" styleClass="text-color" stylesheets="@../Values/style.css" text="Mohamed">
+                                             <VBox.margin>
+                                                <Insets right="50.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="18.0" prefWidth="160.0" styleClass="text-two" stylesheets="@../Values/style.css" text="You: جميل">
+                                             <VBox.margin>
+                                                <Insets left="8.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutY="87.0" prefHeight="79.0" prefWidth="308.0">
+                                 <children>
+                                    <ImageView fitHeight="104.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                                       <image>
+                                          <Image url="@img/user.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="CENTER" prefHeight="79.0" prefWidth="166.0">
+                                       <children>
+                                          <Label prefHeight="23.0" prefWidth="73.0" styleClass="text-color" stylesheets="@../Values/style.css" text="Ahmed">
+                                             <VBox.margin>
+                                                <Insets right="60.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="18.0" prefWidth="160.0" styleClass="text-two" stylesheets="@../Values/style.css" text="nice work, I hope I can see more soon">
+                                             <VBox.margin>
+                                                <Insets left="8.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <Pane prefHeight="79.0" prefWidth="79.0">
+                                       <children>
+                                          <Circle fill="#50c984" layoutX="24.0" layoutY="40.0" radius="12.0" stroke="#2fbc49" strokeType="INSIDE" strokeWidth="0.0" />
+                                          <Label alignment="CENTER" layoutX="20.0" layoutY="31.0" text="1" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutY="165.0" prefHeight="79.0" prefWidth="304.0">
+                                 <children>
+                                    <ImageView fitHeight="104.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                                       <image>
+                                          <Image url="@img/user.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="CENTER" prefHeight="79.0" prefWidth="166.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="99.0" styleClass="text-color" stylesheets="@../Values/style.css" text="Magdy">
+                                             <VBox.margin>
+                                                <Insets right="50.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="18.0" prefWidth="160.0" styleClass="text-two" stylesheets="@../Values/style.css" text="You: Hey ,How are you dude?">
+                                             <VBox.margin>
+                                                <Insets left="8.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutY="244.0" prefHeight="79.0" prefWidth="304.0">
+                                 <children>
+                                    <ImageView fitHeight="104.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                                       <image>
+                                          <Image url="@img/user.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="CENTER" prefHeight="79.0" prefWidth="166.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="99.0" styleClass="text-color" stylesheets="@../Values/style.css" text="Eslam">
+                                             <VBox.margin>
+                                                <Insets right="50.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="18.0" prefWidth="160.0" styleClass="text-two" stylesheets="@../Values/style.css" text="Talk to youl later , Bye">
+                                             <VBox.margin>
+                                                <Insets left="8.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="159.0" styleClass="first-name" stylesheets="@../Values/style.css" text="Mohamed">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="556.0" prefWidth="876.0" stylesheets="@../Values/style.css">
+               <content>
+                  <Pane prefHeight="554.0" prefWidth="874.0" styleClass="background-img" stylesheets="@../Values/style.css">
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="27.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="84.0" layoutY="32.0" prefHeight="48.0" prefWidth="102.0" styleClass="incoming-message" stylesheets="@../Values/style.css" text="Hello :)">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="804.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="29.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="643.0" layoutY="89.0" prefHeight="48.0" prefWidth="155.0" styleClass="sent-message" stylesheets="@../Values/style.css" text="Hello Mohamed">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="85.0" layoutY="137.0" prefHeight="67.0" prefWidth="259.0" styleClass="incoming-message" stylesheets="@../Values/style.css" text="هنعمل ايه يسطا في المشاريع &#10;بنت الكلب الورانا دي ؟؟؟ ">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="804.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="36.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="579.0" layoutY="204.0" prefHeight="48.0" prefWidth="219.0" styleClass="sent-message" stylesheets="@../Values/style.css" text="هنسقط يسطا ايه الجديد ^^">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="92.0" layoutY="252.0" prefHeight="67.0" prefWidth="259.0" styleClass="incoming-message" stylesheets="@../Values/style.css" text="طب بقولك يا كبير انت رايك ايه &#10;في الديزين ده ؟">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="48.0" fitWidth="53.0" layoutX="809.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" styleClass="raduis">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="711.0" layoutY="319.0" prefHeight="48.0" prefWidth="92.0" styleClass="sent-message" stylesheets="@../Values/style.css" text="جميل">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField prefHeight="45.0" prefWidth="531.0" promptText="Type something to send" />
+                  <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" rotate="135.0">
+                     <image>
+                        <Image url="@img/paper-plane.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

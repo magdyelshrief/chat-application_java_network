@@ -1,0 +1,53 @@
+.dark-gray-background{
+    -fx-background-color: #46474A;
+}
+.gray-background{
+    -fx-background-color: #636566;
+}
+.transparent-background{
+    -fx-background-color: rgba(0,0,0,0)
+}
+.raduis{
+    -fx-background-radius:100px;
+}
+.text-color{
+    -fx-text-fill:#fff;
+    -fx-font-size:18px;
+    -fx-font-weight:bold;
+}
+.text-two{
+    -fx-text-fill:#D3D3D3;
+    -fx-font-size:15px;
+}
+.first-name{
+    -fx-text-fill:#9DA7A7;
+    -fx-font-size:25px;
+}
+.background-img {
+    -fx-background-image: url(1.jpg);
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.circle-img{
+    -fx-background-image: url(1.jpg);
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+.incoming-message{
+    -fx-background-color:#FFF;
+    -fx-background-radius: 100px;
+    -fx-text-fill:#9DA7A7;
+    -fx-font-size:18px;
+}
+.sent-message{
+    -fx-background-color:#50C984;
+    -fx-background-radius: 100px;
+    -fx-text-fill:#FFF;
+    -fx-font-size:18px;
+}
+.scroll-pane .viewport{
+    -fx-background-color: #636566;
+}
